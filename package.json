@@ -1,0 +1,24 @@
+{
+  "name": "apple-clone",
+  "version": "1.0.0",
+  "description": "Clone version of archived apple.com webiste built using HTML & CSS",
+  "main": "stylelint.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "npx stylelint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mikearaya/apple-clone.git"
+  },
+  "author": "Mikael Araya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mikearaya/apple-clone/issues"
+  },
+  "homepage": "https://github.com/Mikearaya/apple-clone#readme",
+  "devDependencies": {
+    "stylelint": "^13.2.1",
+    "stylelint-config-recommended": "^3.0.0"
+  }
+}
