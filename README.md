@@ -12,7 +12,7 @@ Clone of [https://apple.com home page](https://web.archive.org/web/2014030100461
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/Mikearaya/apple-clone/home-page-branch/index.html)
+[Live Demo Link](https://rawcdn.githack.com/Mikearaya/apple-clone/63bf0d8f41f9c43351a5cf3937199fa701ceb30c/index.html)
 
 ## Getting Started
 
