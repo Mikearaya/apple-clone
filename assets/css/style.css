@@ -34,18 +34,13 @@ div.search-box {
 
 .fa-search {
   position: absolute;
-  left: 2em;
-}
-
-.fa-search:focus {
-  color: green;
+  left: 1em;
 }
 
 nav > ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 100%;
 }
 
 #search-input {
@@ -76,7 +71,7 @@ nav > ul {
   width: 100%;
   height: 100%;
   line-height: 3rem;
-  border: 1px solid #666;
+  border-right: 1px solid #666;
   text-align: center;
   flex: 1;
 }
@@ -93,7 +88,6 @@ main {
   background: url("../images/center_image.jpg") 20% 50% no-repeat;
   background-position: bottom;
   background-size: cover;
-  position: relative;
   flex-direction: column;
   display: flex;
   align-items: center;
@@ -109,7 +103,7 @@ main nav + div {
 }
 
 main div h1:first-child {
-  font-size: 4em;
+  font-size: 3em;
   font-weight: 100;
 }
 
@@ -118,7 +112,7 @@ main div * {
 }
 
 main div p {
-  font-size: 2em;
+  font-size: 1.5em;
   line-height: 1.5;
   color: transparent;
   font-weight: 200;
