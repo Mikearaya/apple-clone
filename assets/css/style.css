@@ -1,5 +1,7 @@
 body {
   font-family: Helvetica, Arial, Verdana, sans-serif;
+  max-width: 1440px;
+  min-width: 1024px;
 }
 
 * {
@@ -99,8 +101,6 @@ main {
   align-items: center;
   justify-content: center;
   height: 70vh;
-  max-width: 1440px;
-  min-width: 1024px;
   min-height: 550px;
 }
 
