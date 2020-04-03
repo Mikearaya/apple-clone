@@ -3,7 +3,7 @@
 
 Clone of [https://apple.com home page](https://web.archive.org/web/20140301004610/http://www.apple.com/) for my first Microverse solo project included in the HTML & CSS course. 
 
-![screenshot](./images/screenshot.png)
+![screenshot](./assets/images/screenshot.png)
 
 ## Built With
 
