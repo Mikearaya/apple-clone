@@ -1,3 +1,11 @@
+body {
+  font-family: Helvetica, Arial, Verdana, sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
 .link {
   display: inline-block;
   color: blue;
@@ -11,11 +19,22 @@
 
 /* NAV Section START */
 nav {
-  position: absolute;
-  top: 25%;
-  height: 2.5rem;
+  height: 3rem;
   width: 50%;
   background: linear-gradient(#777, #666, #555, #666, #777);
+}
+
+div.search-box {
+  position: relative;
+}
+
+.fa-search {
+  position: absolute;
+  left: 12px;
+}
+
+.fa-search:focus {
+  color: green;
 }
 
 nav > ul {
@@ -23,6 +42,39 @@ nav > ul {
   justify-content: space-around;
   align-items: center;
   height: 100%;
+}
+
+#search-input {
+  background: linear-gradient(#666, #555, #666);
+  border-radius: 10px;
+  border-color: #666;
+  width: 50%;
+  transition: width 0.3s ease-in-out;
+}
+
+#search-input:focus {
+  background: linear-gradient(#fff, #fff);
+  color: grey;
+  width: 100%;
+}
+
+.fa-apple {
+  font-size: 26px;
+  vertical-align: middle;
+}
+
+.nav-item {
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  line-height: 3rem;
+  border: 1px solid #666;
+  text-align: center;
+  flex: 1;
+}
+
+.nav-item:not(:last-child):hover {
+  background: #333;
 }
 
 /* NAV Section END */
@@ -38,6 +90,34 @@ main {
   align-items: center;
   justify-content: center;
   height: 75vh;
+}
+
+main nav + div {
+  text-align: center;
+  width: 45%;
+  color: #fff;
+}
+
+main div h1:first-child {
+  font-size: 4rem;
+  font-weight: 100;
+}
+
+main div * {
+  margin-top: 1em;
+}
+
+main div p {
+  font-size: 2.1rem;
+  line-height: 1.5;
+}
+
+main div p:last-child {
+  font-size: 1.3rem;
+}
+
+main div p:last-child:hover {
+  text-decoration: underline;
 }
 
 /* Main Section END */
