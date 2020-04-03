@@ -1,4 +1,4 @@
-# https://apple.com  home page Clone
+# apple.com  home page Clone
 
 
 Clone of [https://apple.com home page](https://web.archive.org/web/20140301004610/http://www.apple.com/) for my first Microverse solo project included in the HTML & CSS course. 
