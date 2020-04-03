@@ -2,13 +2,17 @@ body {
   font-family: Helvetica, Arial, Verdana, sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .hidden {
   display: none;
 }
 
 .link {
   display: inline-block;
-  color: blue;
+  color: #1cadd1;
   cursor: pointer;
   margin: 0 2px;
 }
@@ -20,7 +24,7 @@ body {
 /* NAV Section START */
 nav {
   height: 3rem;
-  width: 50%;
+  width: 75%;
   background: linear-gradient(#777, #666, #555, #666, #777);
 }
 
@@ -30,7 +34,7 @@ div.search-box {
 
 .fa-search {
   position: absolute;
-  left: 12px;
+  left: 2em;
 }
 
 .fa-search:focus {
@@ -46,20 +50,24 @@ nav > ul {
 
 #search-input {
   background: linear-gradient(#666, #555, #666);
-  border-radius: 10px;
-  border-color: #666;
-  width: 50%;
+  width: 120px;
+  height: 22px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.758);
+  background-size: 12px;
+  padding: 1px 0 1px 30px;
   transition: width 0.3s ease-in-out;
 }
 
 #search-input:focus {
   background: linear-gradient(#fff, #fff);
-  color: grey;
-  width: 100%;
+  width: 200px;
 }
 
-.fa-apple {
-  font-size: 26px;
+.fa-apple.logo {
+  font-size: 32px;
+  background: transparent;
   vertical-align: middle;
 }
 
@@ -83,23 +91,25 @@ nav > ul {
 
 main {
   background: url("../images/center_image.jpg") 20% 50% no-repeat;
+  background-position: bottom;
   background-size: cover;
   position: relative;
   flex-direction: column;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 75vh;
+  height: 70vh;
 }
 
 main nav + div {
+  font-family: BlinkMacSystemFont, "Segoe UI", Roboto, "Open Sans", sans-serif;
   text-align: center;
-  width: 45%;
+  width: 50%;
   color: #fff;
 }
 
 main div h1:first-child {
-  font-size: 4rem;
+  font-size: 4em;
   font-weight: 100;
 }
 
@@ -108,12 +118,18 @@ main div * {
 }
 
 main div p {
-  font-size: 2.1rem;
+  font-size: 2em;
   line-height: 1.5;
+  color: transparent;
+  font-weight: 200;
+  text-shadow: 0 0 1.1px #fff;
 }
 
 main div p:last-child {
-  font-size: 1.3rem;
+  font-size: 1.5em;
+}
+
+main div p:last-child::after {
 }
 
 main div p:last-child:hover {
@@ -133,6 +149,7 @@ aside {
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
+  border: 1px solid white;
   background-size: cover;
 }
 
@@ -157,8 +174,31 @@ aside {
 /* Footer Section START */
 
 footer {
+  margin-top: 10px;
+  color: #6e6e6e;
   display: flex;
   justify-content: space-around;
+  align-items: baseline;
+  height: 10vh;
+  font-size: 12px;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, sans-serif;
+}
+
+footer section:first-child {
+  line-height: 2.5em;
+}
+
+.link-container ul li.link:last-child {
+  background-image: url("../images/usa.png");
+  background-repeat: no-repeat;
+  height: 16px;
+  padding-left: 16px;
+  vertical-align: middle;
+}
+
+.link.border-left {
+  border-left: 1px solid;
+  padding-left: 5px;
 }
 
 /* Footer Section END */
