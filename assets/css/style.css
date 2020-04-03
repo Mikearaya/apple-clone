@@ -24,6 +24,8 @@ body {
 /* NAV Section START */
 nav {
   height: 3rem;
+  border-radius: 3px;
+  box-shadow: 0.5px 0.5px 1px 0.2px #3a3939;
   width: 75%;
   background: linear-gradient(#777, #666, #555, #666, #777);
 }
@@ -50,6 +52,7 @@ nav > ul {
   border-radius: 12px;
   border: 1px solid transparent;
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.758);
+  border-bottom: 0.5px solid #9c9b9b;
   background-size: 12px;
   padding: 1px 0 1px 30px;
   transition: width 0.3s ease-in-out;
@@ -58,6 +61,9 @@ nav > ul {
 #search-input:focus {
   background: linear-gradient(#fff, #fff);
   width: 200px;
+  outline: none;
+  border-radius: 12px;
+  border: 1px solid transparent;
 }
 
 .fa-apple.logo {
@@ -93,6 +99,9 @@ main {
   align-items: center;
   justify-content: center;
   height: 70vh;
+  max-width: 1440px;
+  min-width: 1024px;
+  min-height: 550px;
 }
 
 main nav + div {
