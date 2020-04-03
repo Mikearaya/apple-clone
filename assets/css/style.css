@@ -1,0 +1,84 @@
+.link {
+  display: inline-block;
+  color: blue;
+  cursor: pointer;
+  margin: 0 2px;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* NAV Section START */
+nav {
+  position: absolute;
+  top: 25%;
+  height: 2.5rem;
+  width: 50%;
+  background: linear-gradient(#777, #666, #555, #666, #777);
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+/* NAV Section END */
+
+/* Main Section START */
+
+main {
+  background: url("../images/center_image.jpg") 20% 50% no-repeat;
+  background-size: cover;
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+}
+
+/* Main Section END */
+
+/* Aside Section START */
+
+aside {
+  display: flex;
+  height: 25vh;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.thumbnail.thumbnail-iphone5s {
+  background-image: url("../images/apple5.jpg");
+}
+
+.thumbnail.thumbnail-iphone5c {
+  background-image: url("../images/iphone5c.jpg");
+}
+
+.thumbnail.thumbnail-aniversary {
+  background-image: url("../images/apple_30_years.jpg");
+}
+
+.thumbnail.thumbnail-responsibility {
+  background-image: url("../images/apple_supplier_responsibility.jpg");
+}
+
+/* Aside Section END */
+
+/* Footer Section START */
+
+footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Footer Section END */
