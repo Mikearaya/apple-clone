@@ -2,6 +2,8 @@ body {
   font-family: Helvetica, Arial, Verdana, sans-serif;
   max-width: 1440px;
   min-width: 1024px;
+  margin: auto;
+  width: 1200px;
 }
 
 * {
