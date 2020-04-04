@@ -31,6 +31,7 @@ nav {
   border-radius: 3px;
   box-shadow: 0.5px 0.5px 1px 0.2px #3a3939;
   width: 75%;
+  background: #555;
   background: linear-gradient(#777, #666, #555, #666, #777);
 }
 
@@ -51,6 +52,7 @@ nav > ul {
 }
 
 #search-input {
+  background: #555;
   background: linear-gradient(#666, #555, #666);
   width: 120px;
   height: 22px;
@@ -64,6 +66,7 @@ nav > ul {
 }
 
 #search-input:focus {
+  background: #fff;
   background: linear-gradient(#fff, #fff);
   width: 200px;
   outline: none;
