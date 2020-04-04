@@ -27,12 +27,14 @@ body {
 
 /* NAV Section START */
 nav {
-  height: 3rem;
+  top: 6em;
+  position: relative;
   border-radius: 3px;
   box-shadow: 0.5px 0.5px 1px 0.2px #3a3939;
-  width: 75%;
+  width: 65%;
   background: #555;
   background: linear-gradient(#777, #666, #555, #666, #777);
+  font-size: 12px;
 }
 
 div.search-box {
@@ -43,6 +45,7 @@ div.search-box {
   color: white;
   position: absolute;
   left: 1em;
+  bottom: 0.5em;
 }
 
 nav > ul {
@@ -60,9 +63,8 @@ nav > ul {
   border: 1px solid transparent;
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.758);
   border-bottom: 0.5px solid #9c9b9b;
-  background-size: 12px;
-  padding: 1px 0 1px 30px;
   transition: width 0.3s ease-in-out;
+  margin: 0;
 }
 
 #search-input:focus {
@@ -75,17 +77,16 @@ nav > ul {
 }
 
 .fa-apple.logo {
-  font-size: 32px;
-  background: transparent;
-  vertical-align: middle;
+  font-size: 15px;
 }
 
 .nav-item {
   width: 100%;
   height: 100%;
-  line-height: 3rem;
   border-right: 1px solid #666;
   text-align: center;
+  font-size: 12px;
+  line-height: 2;
 }
 
 .nav-item a {
@@ -95,6 +96,11 @@ nav > ul {
 
 .nav-item:not(:last-child):hover {
   background: #333;
+  border: 0;
+}
+
+ul li.nav-item:last-child {
+  padding: 3px 10px;
 }
 
 /* NAV Section END */
@@ -102,22 +108,22 @@ nav > ul {
 /* Main Section START */
 
 main {
-  background: url("../images/center_image.jpg") 20% 50% no-repeat;
+  background: url(../images/center_image.jpg) 20% 50% no-repeat;
   background-position: bottom;
   background-size: cover;
   flex-direction: column;
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 70vh;
-  min-height: 550px;
+  height: 77vh;
 }
 
 main nav + div {
   font-family: BlinkMacSystemFont, "Segoe UI", Roboto, "Open Sans", sans-serif;
   text-align: center;
   width: 50%;
+  position: relative;
   color: #fff;
+  top: 4em;
 }
 
 main div h1:first-child {
@@ -161,6 +167,14 @@ aside {
   background-repeat: no-repeat;
   border: 2px solid white;
   background-size: cover;
+}
+
+aside .thumbnail:first-child {
+  border-left: none;
+}
+
+aside .thumbnail:last-child {
+  border-right: none;
 }
 
 .thumbnail.thumbnail-iphone5s {
