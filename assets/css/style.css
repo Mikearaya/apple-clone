@@ -15,8 +15,8 @@ body {
 }
 
 .link {
-  display: inline-block;
   color: #1cadd1;
+  text-decoration: none;
   cursor: pointer;
   margin: 0 2px;
 }
@@ -39,6 +39,7 @@ div.search-box {
 }
 
 .fa-search {
+  color: white;
   position: absolute;
   left: 1em;
 }
@@ -77,13 +78,16 @@ nav > ul {
 }
 
 .nav-item {
-  color: #fff;
   width: 100%;
   height: 100%;
   line-height: 3rem;
   border-right: 1px solid #666;
   text-align: center;
-  flex: 1;
+}
+
+.nav-item a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .nav-item:not(:last-child):hover {
@@ -136,6 +140,7 @@ main div p:last-child {
 
 main div p:last-child:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 /* Main Section END */
@@ -182,7 +187,7 @@ footer {
   justify-content: space-around;
   align-items: baseline;
   height: 10vh;
-  font-size: 12px;
+  font-size: 10px;
   font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, sans-serif;
 }
 
@@ -190,7 +195,11 @@ footer div:first-child {
   line-height: 2.5em;
 }
 
-.link-container ul li.link:last-child {
+.link-container ul li {
+  display: inline-block;
+}
+
+.link-container ul li:last-child {
   background-image: url("../images/usa.png");
   background-repeat: no-repeat;
   height: 16px;
@@ -198,7 +207,7 @@ footer div:first-child {
   vertical-align: middle;
 }
 
-.link.border-left {
+li.border-left {
   border-left: 1px solid;
   padding-left: 5px;
 }
